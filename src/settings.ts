@@ -89,7 +89,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Show notifications")
-			.setDesc("Display a notice when metadata is stripped from an image.")
+			.setDesc("Display a notice when metadata is stripped from a file.")
 			.addToggle((toggle) =>
 				toggle
 					.setValue(this.plugin.settings.showNotifications)
