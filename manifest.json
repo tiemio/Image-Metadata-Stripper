@@ -1,0 +1,10 @@
+{
+	"id": "image-metadata-stripper",
+	"name": "Image Metadata Stripper",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Automatically strips privacy-sensitive metadata from images and PDFs in your Obsidian vault.",
+	"author": "tiemio",
+	"authorUrl": "https://github.com/tiemio",
+	"isDesktopOnly": false
+}
