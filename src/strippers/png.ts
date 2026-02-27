@@ -1,5 +1,5 @@
 import { StripResult } from "../types";
-import { readUint32BE, matchesAscii } from "../utils";
+import { readUint32BE } from "../utils";
 
 const PNG_SIGNATURE = [137, 80, 78, 71, 13, 10, 26, 10];
 

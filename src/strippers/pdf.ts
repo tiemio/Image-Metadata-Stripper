@@ -48,9 +48,7 @@ const XPACKET_BEGIN = toBytes("<?xpacket begin");
 const XPACKET_END_PREFIX = toBytes("<?xpacket end");
 const TRAILER = toBytes("trailer");
 const INFO_SLASH = toBytes("/Info");
-const OBJ_KEYWORD = toBytes(" obj");
 const DICT_OPEN = toBytes("<<");
-const DICT_CLOSE = toBytes(">>");
 const ENDOBJ = toBytes("endobj");
 
 // --- XMP packet stripping ---

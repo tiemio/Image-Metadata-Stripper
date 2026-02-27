@@ -27,7 +27,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Strip JPEG metadata")
-			.setDesc("Remove EXIF, IPTC, XMP, and comment data from JPEG images.")
+			.setDesc("Remove metadata and comments from JPEG images.")
 			.addToggle((toggle) =>
 				toggle
 					.setValue(this.plugin.settings.stripJpeg)
@@ -39,7 +39,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Strip PNG metadata")
-			.setDesc("Remove text chunks and EXIF data from PNG images.")
+			.setDesc("Remove metadata from PNG images.")
 			.addToggle((toggle) =>
 				toggle
 					.setValue(this.plugin.settings.stripPng)
@@ -51,7 +51,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Strip WebP metadata")
-			.setDesc("Remove EXIF and XMP data from WebP images.")
+			.setDesc("Remove metadata from WebP images.")
 			.addToggle((toggle) =>
 				toggle
 					.setValue(this.plugin.settings.stripWebp)
@@ -63,7 +63,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Strip PDF metadata")
-			.setDesc("Remove Info dictionary and XMP metadata from PDF files.")
+			.setDesc("Remove metadata from PDF files.")
 			.addToggle((toggle) =>
 				toggle
 					.setValue(this.plugin.settings.stripPdf)
@@ -76,7 +76,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 		new Setting(containerEl)
 			.setName("Keep color profiles")
 			.setDesc(
-				"Preserve ICC color profile data. Disabling may slightly alter color rendering."
+				"Preserve color profile data. Disabling may slightly alter color rendering."
 			)
 			.addToggle((toggle) =>
 				toggle
@@ -102,7 +102,7 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 		new Setting(containerEl)
 			.setName("Strip all vault files")
 			.setDesc(
-				"Strip metadata from all existing images and PDFs in the vault. This cannot be undone."
+				"Strip metadata from all supported files in the vault. This cannot be undone."
 			)
 			.addButton((button) =>
 				button

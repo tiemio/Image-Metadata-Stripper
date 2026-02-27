@@ -37,7 +37,7 @@ export default class ImageMetadataStripperPlugin extends Plugin {
 			this.registerEvent(
 				this.app.vault.on("create", (file) => {
 					if (file instanceof TFile) {
-						this.handleFile(file);
+						void this.handleFile(file);
 					}
 				})
 			);
