@@ -1,6 +1,6 @@
 {
 	"name": "image-metadata-stripper",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"description": "Obsidian plugin to strip metadata from images",
 	"main": "main.js",
 	"scripts": {
