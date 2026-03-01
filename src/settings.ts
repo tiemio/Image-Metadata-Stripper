@@ -50,8 +50,8 @@ export class ImageMetadataStripperSettingTab extends PluginSettingTab {
 			);
 
 		new Setting(containerEl)
-			.setName("Strip WebP metadata")
-			.setDesc("Remove metadata from WebP images.")
+			.setName("Strip WEBP metadata")
+			.setDesc("Remove metadata from WEBP images.")
 			.addToggle((toggle) =>
 				toggle
 					.setValue(this.plugin.settings.stripWebp)
